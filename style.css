@@ -64,6 +64,7 @@ button.btn:hover {
     display: flex;
     justify-content: space-between;
     margin-top: 15px;
+    text-transform: capitalize;
 }
 
 .todo-list-output p {
