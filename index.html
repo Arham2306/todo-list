@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo List</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<body>
-
+  <body>
     <p class="head">Todo List</p>
 
-    <input type="text" class="name-input" placeholder="Todo name">
+    <div class="todo-input">
+      <input type="text" class="name-input" placeholder="Todo name" />
+      <input type="date" class="due-date-input" />
+    </div>
     <button class="btn" onclick="addTask()">Add</button>
 
     <div class="todo-list-output"></div>
 
-
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>

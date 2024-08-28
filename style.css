@@ -30,10 +30,12 @@ input.name-input {
     border-radius: 25px;
     margin-bottom: 20px;
     color: #fff;
+    font-size: 18px;
 }
 
 input.name-input::placeholder {
     color: #6EACDA;
+    opacity: 0.5;
 }
 
 button.btn {
@@ -43,6 +45,7 @@ button.btn {
     padding: 10px 40px;
     border-radius: 25px;
     transition: .3s all;
+    font-size: 18px;
 }
 
 button.btn:hover {
@@ -54,9 +57,48 @@ button.btn:hover {
 .todo-list-output {
     margin-top: 15px;
     color: #fff;
-    width: 300px;
+    width: 550px;
+}
+
+.todo-list-li {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-;
 }
 
 .todo-list-output p {
     margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.due-date-input {
+    background: transparent;
+    border: 1px solid #6EACDA;
+    padding: 15px;
+    border-radius: 25px;
+    margin-left: 10px;
+    color: #fff;
+    font-size: 18px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(180deg);
+}
+
+.delete-btn {
+    background-color: #FF0000;
+    border: none;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: .3s all;
+}
+
+.delete-btn:hover {
+    background-color: transparent;
+    color: #FF0000;
+    outline: 1px solid #FF0000;
 }
