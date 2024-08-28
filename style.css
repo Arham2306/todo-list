@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+
+body {
+    background-color: #021526;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.head {
+    font-size: 35px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+input.name-input {
+    background: transparent;
+    border: 1px solid #6EACDA;
+    padding: 15px 100px 15px 15px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+input.name-input::placeholder {
+    color: #6EACDA;
+}
+
+button.btn {
+    background-color: #6EACDA;
+    color: #021526;
+    border: 1px solid #6EACDA;
+    padding: 10px 40px;
+    border-radius: 25px;
+    transition: .3s all;
+}
+
+button.btn:hover {
+    background: transparent;
+    color: #6EACDA;
+    cursor: pointer;
+}
+
+.todo-list-output {
+    margin-top: 15px;
+    color: #fff;
+    width: 300px;
+}
+
+.todo-list-output p {
+    margin-bottom: 10px;
+}
