@@ -26,7 +26,7 @@ body {
 input.name-input {
     background: transparent;
     border: 1px solid #6EACDA;
-    padding: 15px 100px 15px 15px;
+    padding: 15px 55px 15px 15px;
     border-radius: 25px;
     margin-bottom: 20px;
     color: #fff;
@@ -64,8 +64,13 @@ button.btn:hover {
 .todo-list-li {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 15px;
     text-transform: capitalize;
+}
+
+.todo-list-li div {
+    font-size: 18px;
 }
 
 .todo-list-output p {
@@ -96,6 +101,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     cursor: pointer;
     margin-left: 20px;
     transition: .3s all;
+    font-size: 18px;
 }
 
 .delete-btn:hover {
