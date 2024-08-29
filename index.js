@@ -35,13 +35,21 @@ function addTask() {
     const dateInput = document.querySelector('.due-date-input');
     const dueDate = dateInput.value;
 
-    todoList.push({
-        name: name,
-        dueDate: dueDate
-    });
+    if (inputElement.value === '') {
+        alert('Please enter a task');
+    } else if (dateInput.value === '') {
+        alert('Please enter a date.')
+    } else {
 
-    inputElement.value = '';
+        todoList.push({
+            name: name,
+            dueDate: dueDate
+        });
 
-    renderTodoList();
+        inputElement.value = '';
+        dateInput.value = '';
+
+        renderTodoList();
+    }
 
 }
