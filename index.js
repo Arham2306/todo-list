@@ -1,3 +1,15 @@
+document.querySelector('.name-input').addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {
+        addTask();
+    }
+});
+
+document.querySelector('.due-date-input').addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {
+        addTask();
+    }
+});
+
 const todoList = [];
 
 function renderTodoList() {
