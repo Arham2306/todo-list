@@ -15,24 +15,40 @@ const todoList = [];
 function renderTodoList() {
     let todoListHTML = '';
 
-    for (let i = 0; i < todoList.length; i++) {
-        const todoObject = todoList[i];
-        //const name = todoObject.name;
-        //const dueDate = todoObject.dueDate;
+    todoList.forEach(function (todoObject, index) {
         const { name, dueDate } = todoObject;
         const html = `
         <div class="todo-list-li">
             <div>${name}</div>
             <div>${dueDate}</div>
             <button class="delete-btn" onclick="
-                todoList.splice(${i}, 1);
+                todoList.splice(${index}, 1);
                 renderTodoList();
                 ">Delete
             </button>
             </div>
         </div>`;
         todoListHTML += html;
-    }
+    })
+
+    // for (let i = 0; i < todoList.length; i++) {
+    //     const todoObject = todoList[i];
+    //     //const name = todoObject.name;
+    //     //const dueDate = todoObject.dueDate;
+    //     const { name, dueDate } = todoObject;
+    //     const html = `
+    //     <div class="todo-list-li">
+    //         <div>${name}</div>
+    //         <div>${dueDate}</div>
+    //         <button class="delete-btn" onclick="
+    //             todoList.splice(${i}, 1);
+    //             renderTodoList();
+    //             ">Delete
+    //         </button>
+    //         </div>
+    //     </div>`;
+    //     todoListHTML += html;
+    // }
 
     document.querySelector('.todo-list-output').innerHTML = todoListHTML;
 }
